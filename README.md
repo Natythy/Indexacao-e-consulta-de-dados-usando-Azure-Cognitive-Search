@@ -1,0 +1,1 @@
+# Indexacao-e-consulta-de-dados-usando-Azure-Cognitive-Search
