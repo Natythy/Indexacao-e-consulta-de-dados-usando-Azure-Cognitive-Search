@@ -250,7 +250,7 @@ O processo de acesso e criação de recursos para a exploração dos recursos j�
 
 ## Conclusões
 
-
+O uso dessa ferrameta é extremamente importante para análise de grande volume de dados. É possível ver a quantidade de inputs de acordo com os critérios necessários. Eu como analista enxergo a otmização do tempo do profissional responsável pela análise de textos, principalmente a análise de sentimentos.
 
 ## Limpando o ambiente
 > [!WARNING]
