@@ -15,7 +15,11 @@ O processo de acesso e criação de recursos para a exploração dos recursos j�
 ## Insights
 
 ### Teste 1:
-locations:'Chicago'
+
+{
+ "search": "locations:'Chicago'",
+ "count": true
+}
 
 - Colocando no editor o texto acima, os resultados mostram as reviews que somente têm como localização a cidade de Chicago, em Illinois. Mostrando sua efetividade nesta busca.
 ![Captura de tela 2024-04-15 224027](https://github.com/Natythy/Indexacao-e-consulta-de-dados-usando-Azure-Cognitive-Search/assets/88320974/dcc273a4-d10e-4400-8145-bf2beeadf95f)
@@ -195,10 +199,56 @@ locations:'Chicago'
 </details>
 
 ### Teste 2:
-sentiment:'negative'
+
+{
+ "search": "sentiment:'negative'",
+ "count": true
+}
 
 - Colocando no editor o texto acima, os resultados mostram as reviews que somente têm no texto sentiments negatives, fazendo a análise de acordo com os adjetivos e como são colocados no texto.
 ![Captura de tela 2024-04-15 223946](https://github.com/Natythy/Indexacao-e-consulta-de-dados-usando-Azure-Cognitive-Search/assets/88320974/25983f26-42ed-47e6-9bc5-fbcd19045588)
+
+<details>
+<summary> Resultado em JSON </summary>
+
+```
+{
+  "@odata.context": "https://coffee.search.windows.net/indexes('coffee-index')/$metadata#docs(*)",
+  "@odata.count": 1,
+  "value": [
+    {
+      "@search.score": 1.89712,
+      "content": "Review: Today I was truly disappointed with how long I had to wait for the pastries I ordered ahead of time. When I got my box, some of the pastries seemed stale. Terrible experience!  \nDate: October 23, 2018\nLocation: Chicago, Illinois \n\n",
+      "metadata_storage_path": "aHR0cHM6Ly9sYWIwMTM0Mjk4MTYzNjEuYmxvYi5jb3JlLndpbmRvd3MubmV0L2NvZmZlZS1yZXZpZXdzL3Jldmlldy04LmRvY3g1",
+      "locations": [
+        "Chicago",
+        "Illinois"
+      ],
+      "keyphrases": [
+        "Terrible experience",
+        "Review",
+        "pastries",
+        "time",
+        "box",
+        "Date",
+        "October",
+        "Location",
+        "Chicago",
+        "Illinois"
+      ],
+      "sentiment": "[\"negative\"]",
+      "merged_content": "Review: Today I was truly disappointed with how long I had to wait for the pastries I ordered ahead of time. When I got my box, some of the pastries seemed stale. Terrible experience!  \nDate: October 23, 2018\nLocation: Chicago, Illinois \n\n",
+      "text": [],
+      "layoutText": [],
+      "imageTags": [],
+      "imageCaption": []
+    }
+  ]
+}
+```
+</details>
+
+## Conclusões
 
 
 
