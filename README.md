@@ -16,3 +16,8 @@ O processo de acesso e criação de recursos para a exploração dos recursos j�
 
 ![Captura de tela 2024-04-15 223946](https://github.com/Natythy/Indexacao-e-consulta-de-dados-usando-Azure-Cognitive-Search/assets/88320974/25983f26-42ed-47e6-9bc5-fbcd19045588)
 ![Captura de tela 2024-04-15 224027](https://github.com/Natythy/Indexacao-e-consulta-de-dados-usando-Azure-Cognitive-Search/assets/88320974/dcc273a4-d10e-4400-8145-bf2beeadf95f)
+
+
+## Limpando o ambiente
+> [!WARNING]
+> Após a conclusão do projeto, se não for reaproveitar os recursos utilizados, é aconselhável excluí-los, bem como os grupos de recursos, para que não haja cobranças indevidas na sua Azure Subscription.
